@@ -22,8 +22,8 @@ pipeline
         {
             steps
             {
-                sh(script: 'docker images -a'
-                sh(script: '''cd azure-vote/ 
+                pwsh(script: 'docker images -a'
+                pwsh(script: '''cd azure-vote/ 
                 docker images-a 
                 docker build -t jenkins-pipeline . 
                 docker images -a 
