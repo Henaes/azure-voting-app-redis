@@ -16,13 +16,13 @@ pipeline
             steps
             {
                 sh(script: 'docker images -a')
-                sh(script: """
+                sh(script: '
                 cd azure-vote/
                 docker images-a
                 docker build -t jenkings-pipeline .
                 docker images -a
                 cd ..
-                """)
+                ')
 
             }
         }
