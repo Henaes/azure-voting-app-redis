@@ -10,6 +10,13 @@ pipeline
                 echo $GIT_BRANCH
             }
         }
+        stage('Fix 5 branch') 
+        {
+            steps 
+            {
+                echo 'Something changed'
+            }
+        }
 
         stage('Docker Build')
         {
